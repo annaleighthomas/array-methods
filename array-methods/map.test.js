@@ -8,6 +8,8 @@ describe('takes an array and a call back and returns an array', () => {
   });
 
   it('', () => {
-    
+    const input = ['apple', 'banana', 'grape'];
+    const output = map(input, item => item.toUpperCase());
+    expect(output).toEqual(['APPLE', 'BANANA', 'GRAPE']);
   });
 });
