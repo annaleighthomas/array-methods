@@ -7,9 +7,9 @@ describe('takes an array and a call back and returns an array', () => {
     expect(output).toEqual([]);
   });
 
-  it('', () => {
-    const input = ['apple', 'banana', 'grape'];
+  it('capitalizes strings in an array', () => {
+    const input = ['apple', 'banana', '', 'grape'];
     const output = map(input, item => item.toUpperCase());
-    expect(output).toEqual(['APPLE', 'BANANA', 'GRAPE']);
+    expect(output).toEqual(['APPLE', 'BANANA', '', 'GRAPE']);
   });
 });
